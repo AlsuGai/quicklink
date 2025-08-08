@@ -1,0 +1,59 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  font-family: "Manrope";
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: #140e17;
+  padding: 64px 20px;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  padding: 0;
+}
+
+h1 {
+  font-weight: 800;
+  font-size: 68px;
+  line-height: 110%;
+  color: white;
+}
+
+.container {
+  max-width: 1000px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.mt-80 {
+  margin-top: 80px;
+}
+
+.mt-32 {
+  margin-top: 32px;
+}
+
+h3 {
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 26px;
+  color: rgba(245, 250, 147, 1);
+  margin-left: 24px;
+}
+
+@media screen and (max-width: 480px) {
+  h1 {
+    font-weight: 700;
+    font-size: 42px;
+    line-height: 54px;
+  }
+}

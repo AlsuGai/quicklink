@@ -1,0 +1,139 @@
+.hero {
+  position: relative;
+}
+
+.hero::before {
+  content: "";
+  background-image: url("../assets/images/hero-pic.png");
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  right: 0;
+  width: 444px;
+  height: 408px;
+  background-repeat: no-repeat;
+  background-position: right;
+}
+
+.hero-description {
+  display: flex;
+  flex-direction: column;
+  max-width: 539px;
+  width: 100%;
+}
+
+.hero-description h1 {
+  position: relative;
+}
+
+.hero-description .h1-top::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: -20px;
+  background: url("../assets/images/hero_text_line.png") no-repeat right top;
+}
+
+.hero-description h1::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  bottom: -55%;
+  right: 20%;
+  background: url("../assets/images/Underline.png") no-repeat center center;
+}
+
+.description-text {
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 28px;
+  color: white;
+  margin-top: 53px;
+}
+
+.label-hero {
+  display: none;
+}
+
+.hero-email {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 64px;
+  gap: 24px;
+}
+
+.hero-email input {
+  max-width: 317px;
+  width: 100%;
+  border-radius: 18px;
+  border: none;
+  height: 61px;
+}
+
+.hero-email input::placeholder {
+  padding-left: 18px;
+  font-weight: 600;
+  font-size: 18px;
+}
+
+.hero-email-btn {
+  display: flex;
+  background-color: rgba(245, 250, 147, 1);
+  max-width: 222px;
+  width: 100%;
+  height: 61px;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  border-radius: 18px;
+  transition: all 0.8s;
+}
+
+.hero-email-send div {
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 100%;
+  color: black;
+}
+
+@media screen and (max-width: 768px) {
+  .hero::before {
+    opacity: 0.2;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .hero-description {
+    max-width: fit-content;
+  }
+
+  .hero-description h1 {
+    max-width: 335px;
+    width: 100%;
+  }
+
+  .hero::before {
+    background-size: 68vw auto;
+  }
+
+  .hero-description .h1-top::after {
+    background-size: 34px 30px;
+  }
+
+  .hero-description h1::after {
+    width: 100px;
+    height: 21px;
+    left: 0;
+    bottom: -20px;
+    background-size: 100px 21px;
+  }
+}
+
+@media (hover: hover) {
+  .hero-email-btn:hover {
+    background-color: white;
+  }
+}
